@@ -1,0 +1,1 @@
+cat markers2.json | jq '[.[] | select(.status != "Registering interest") | select(.status != "Installation agreed")]'
